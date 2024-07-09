@@ -56,9 +56,7 @@ packages=(
     build-essential
     vim
     xorg
-    xinit
-    x11-xserver-utils
-    i3
+    i3-wm
     firefox-esr
     alacritty
     polybar
@@ -69,6 +67,9 @@ packages=(
     maven
     nodejs
     npm
+    lightdm
+    light-locker
+    dunst
 )
 
 # Iterar sobre cada paquete e intentar instalarlo
