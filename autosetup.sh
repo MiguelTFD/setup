@@ -57,6 +57,8 @@ packages=(
     vim
     xorg
     i3-wm
+    feh
+    psmisc
     firefox-esr
     alacritty
     polybar
