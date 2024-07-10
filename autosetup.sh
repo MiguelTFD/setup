@@ -72,6 +72,7 @@ packages=(
     lightdm
     light-locker
     dunst
+    nemo
 )
 
 # Iterar sobre cada paquete e intentar instalarlo
