@@ -72,7 +72,7 @@ packages=(
     lightdm
     light-locker
     dunst
-    nemo
+	 timeshift
 )
 
 # Iterar sobre cada paquete e intentar instalarlo
@@ -82,4 +82,11 @@ for pkg in "${packages[@]}"; do
 done
 
 echo "Proceso de instalación de paquetes completado."
+
+#enlace simbolico 
+sudo ln -s "$home_dir/.config/gtk-3.0/settings.ini" /etc/gtk-3.0/settings.ini
+sudo ln -s "$home_dir/.themes" /usr/share/themes
+
+#if 
+
 echo "Script completado con éxito."
