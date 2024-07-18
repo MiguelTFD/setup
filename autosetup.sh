@@ -4,7 +4,11 @@
 repo_url="https://github.com/MiguelTFD/dotfiles.git"
 
 # Obtener el directorio home del usuario actual
-home_dir=$(eval echo ~${SUDO_USER})
+if [ -n "$SUDO_USER" ]; then
+    home_dir=$(eval echo ~${SUDO_USER})
+else
+    home_dir="$HOME"
+fi
 
 # Función para instalar un paquete
 install_package() {
