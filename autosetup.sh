@@ -76,7 +76,8 @@ packages=(
     lightdm
     light-locker
     dunst
-	 timeshift
+    scrot
+    timeshift
 )
 
 # Iterar sobre cada paquete e intentar instalarlo
