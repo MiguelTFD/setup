@@ -77,6 +77,7 @@ packages=(
     light-locker
     dunst
     scrot
+    calcurse
     timeshift
 )
 
