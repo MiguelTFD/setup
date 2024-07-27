@@ -89,15 +89,7 @@ done
 
 echo "Proceso de instalación de paquetes completado."
 
-#Aplicando temas al sistema (root, programas, lightdm, etc) 
-sudo cp -f "$home_dir/.config/gtk-3.0/settings.ini" /etc/gtk-3.0/
-sudo cp -r "$home_dir/.themes/Nordic-darker/" /usr/share/themes/
-sudo cp -r "$home_dir/.local/share/wallpapers/NordTheme" /usr/share/wallpapers/
-sudo cp -f "$home_dir/.config/miscellaneous/lightdm/lightdm.conf" /etc/lightdm/
-sudo cp -f "$home_dir/.config/miscellaneous/lightdm/lightdm-gtk-greeter.conf" /etc/lightdm/
-
-
-
-#if 
+curl -sS https://starship.rs/install.sh | sh
+starship preset gruvbox-rainbow -o ~/.config/starship.toml
 
 echo "Script completado con éxito."
