@@ -89,6 +89,14 @@ done
 
 echo "Proceso de instalación de paquetes completado."
 
+sudo cp -r "$home_dir/.themes/Gruvbox-Dark-Medium" /usr/share/themes/
+sudo cp -r "$home_dir/.themes/Gruvbox-Dark-Medium-xhdpi/" /usr/share/themes/
+sudo cp -r "$home_dir/.themes/Gruvbox-Dark-Medium-hdpi/" /usr/share/themes/
+
+sudo cp -r "$home_dir/.themes/Gruvbox-Light" /usr/share/themes/
+sudo cp -r "$home_dir/.themes/Gruvbox-Light-xhdpi/" /usr/share/themes/
+sudo cp -r "$home_dir/.themes/Gruvbox-Light-hdpi/" /usr/share/themes/
+
 curl -sS https://starship.rs/install.sh | sh
 starship preset gruvbox-rainbow -o ~/.config/starship.toml
 
