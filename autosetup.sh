@@ -79,6 +79,7 @@ packages=(
     scrot
     calcurse
     timeshift
+    picom
 )
 
 # Iterar sobre cada paquete e intentar instalarlo
