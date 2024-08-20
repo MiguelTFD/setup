@@ -64,7 +64,7 @@ packages=(
     feh
     psmisc
     firefox-esr
-    alacritty
+    kitty
     polybar
     rofi
     ranger
