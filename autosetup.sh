@@ -74,6 +74,7 @@ packages=(
     maven
     nodejs
     npm
+    php
     lightdm
     light-locker
     dunst
