@@ -65,6 +65,7 @@ packages=(
     psmisc
     firefox-esr
     kitty
+    python3-pil
     polybar
     rofi
     ranger
