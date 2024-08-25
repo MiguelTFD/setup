@@ -64,8 +64,7 @@ packages=(
     feh
     psmisc
     firefox-esr
-    kitty
-    python3-pil
+    alacritty
     polybar
     rofi
     ranger
@@ -74,7 +73,6 @@ packages=(
     maven
     nodejs
     npm
-    php
     lightdm
     light-locker
     dunst
@@ -92,14 +90,18 @@ done
 
 echo "Proceso de instalación de paquetes completado."
 
-sudo cp -r "$home_dir/.themes/Orchis-Dark-Nord" /usr/share/themes/
-sudo cp -r "$home_dir/.themes/Orchis-Light-Nord" /usr/share/themes/
+sudo cp -r "$home_dir/.themes/Gruvbox-Dark-Medium" /usr/share/themes/
+sudo cp -r "$home_dir/.themes/Gruvbox-Dark-Medium-xhdpi/" /usr/share/themes/
+sudo cp -r "$home_dir/.themes/Gruvbox-Dark-Medium-hdpi/" /usr/share/themes/
 
-sudo cp -r "$home_dir/.local/share/wallpapers/NordTheme" /usr/share/wallpapers/
+sudo cp -r "$home_dir/.local/share/wallpapers/Gruvbox" /usr/share/wallpapers/
 sudo cp -f "$home_dir/.config/miscellaneous/lightdm/lightdm.conf" /etc/lightdm/
 
+sudo cp -r "$home_dir/.themes/Gruvbox-Light" /usr/share/themes/
+sudo cp -r "$home_dir/.themes/Gruvbox-Light-xhdpi/" /usr/share/themes/
+sudo cp -r "$home_dir/.themes/Gruvbox-Light-hdpi/" /usr/share/themes/
 
 curl -sS https://starship.rs/install.sh | sh
-starship preset gruvbox-rainbow -o ~/.config/starship.toml #eliminar esto
+starship preset gruvbox-rainbow -o ~/.config/starship.toml
 
 echo "Script completado con éxito."
