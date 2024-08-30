@@ -80,6 +80,7 @@ packages=(
     calcurse
     timeshift
     picom
+    net-tools
 )
 
 # Iterar sobre cada paquete e intentar instalarlo
