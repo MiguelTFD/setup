@@ -103,6 +103,5 @@ sudo cp -r "$home_dir/.themes/Gruvbox-Light-xhdpi/" /usr/share/themes/
 sudo cp -r "$home_dir/.themes/Gruvbox-Light-hdpi/" /usr/share/themes/
 
 curl -sS https://starship.rs/install.sh | sh
-starship preset gruvbox-rainbow -o ~/.config/starship.toml
 
 echo "Script completado con éxito."
