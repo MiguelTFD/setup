@@ -93,16 +93,17 @@ done
 
 echo "Proceso de instalación de paquetes completado."
 
-sudo cp -r "$home_dir/.themes/Gruvbox-Dark-Medium" /usr/share/themes/
-sudo cp -r "$home_dir/.themes/Gruvbox-Dark-Medium-xhdpi/" /usr/share/themes/
-sudo cp -r "$home_dir/.themes/Gruvbox-Dark-Medium-hdpi/" /usr/share/themes/
 
-sudo cp -r "$home_dir/.local/share/wallpapers/Gruvbox" /usr/share/wallpapers/
+sudo cp -r "$home_dir/.themes/Graphite-Dark-nord" /usr/share/themes/
+sudo cp -r "$home_dir/.themes/Graphite-Dark-nord-xhdpi/" /usr/share/themes/
+sudo cp -r "$home_dir/.themes/Graphite-Dark-nord-hdpi/" /usr/share/themes/
+
+sudo cp -r "$home_dir/.local/share/wallpapers/nord" /usr/share/wallpapers/
 sudo cp -f "$home_dir/.config/miscellaneous/lightdm/lightdm.conf" /etc/lightdm/
 
-sudo cp -r "$home_dir/.themes/Gruvbox-Light" /usr/share/themes/
-sudo cp -r "$home_dir/.themes/Gruvbox-Light-xhdpi/" /usr/share/themes/
-sudo cp -r "$home_dir/.themes/Gruvbox-Light-hdpi/" /usr/share/themes/
+sudo cp -r "$home_dir/.themes/Graphite-Light-nord" /usr/share/themes/
+sudo cp -r "$home_dir/.themes/Graphite-Light-nord-xhdpi/" /usr/share/themes/
+sudo cp -r "$home_dir/.themes/Graphite-Light-nord-hdpi/" /usr/share/themes/
 
 curl -sS https://starship.rs/install.sh | sh
 
