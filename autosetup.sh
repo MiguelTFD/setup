@@ -82,6 +82,7 @@ packages=(
     timeshift
     picom
     net-tools
+    ripgrep
 )
 
 
