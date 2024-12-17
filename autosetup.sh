@@ -106,7 +106,4 @@ sudo cp -r "$home_dir/.themes/Graphite-Light-nord" /usr/share/themes/
 sudo cp -r "$home_dir/.themes/Graphite-Light-nord-xhdpi/" /usr/share/themes/
 sudo cp -r "$home_dir/.themes/Graphite-Light-nord-hdpi/" /usr/share/themes/
 
-curl -sS https://starship.rs/install.sh | sh
-
-
 echo "Script completado con éxito."
