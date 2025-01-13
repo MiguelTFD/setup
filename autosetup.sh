@@ -83,6 +83,7 @@ packages=(
     picom
     net-tools
     ripgrep
+    bpytop
 )
 
 
