@@ -71,8 +71,6 @@ packages=(
     neofetch
     openjdk-17-jdk
     maven
-    nodejs
-    npm
     lightdm
     light-locker
     dunst
@@ -86,14 +84,12 @@ packages=(
     btop
 )
 
-
-# Iterar sobre cada paquete e intentar instalarlo
 echo "Instalando paquetes..."
 for pkg in "${packages[@]}"; do
     install_package "$pkg"
 done
 
-echo "Proceso de instalación de paquetes completado."
+echo "Proceso de instalacion de paquetes completado."
 
 sudo cp -r "$home_dir/.themes/Gruvbox-Dark-Medium" /usr/share/themes/
 sudo cp -r "$home_dir/.themes/Gruvbox-Dark-Medium-xhdpi/" /usr/share/themes/
@@ -107,5 +103,8 @@ sudo cp -r "$home_dir/.themes/Gruvbox-Light-xhdpi/" /usr/share/themes/
 sudo cp -r "$home_dir/.themes/Gruvbox-Light-hdpi/" /usr/share/themes/
 
 curl -sS https://starship.rs/install.sh | sh
+
+# Instalacion de NVM
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
 
 echo "Script completado con éxito."
