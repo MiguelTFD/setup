@@ -60,6 +60,7 @@ packages=(
     build-essential
     vim
     xorg
+    xclip
     i3-wm
     feh
     psmisc
