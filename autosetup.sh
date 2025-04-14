@@ -84,6 +84,7 @@ packages=(
     ripgrep
     btop
     zatura
+    fzf
 )
 
 echo "Instalando paquetes..."
