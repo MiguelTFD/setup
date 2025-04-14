@@ -83,6 +83,7 @@ packages=(
     net-tools
     ripgrep
     btop
+    zatura
 )
 
 echo "Instalando paquetes..."
