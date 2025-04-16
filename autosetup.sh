@@ -75,6 +75,7 @@ packages=(
     lightdm
     light-locker
     dunst
+    libnotify-bin
     scrot
     ffmpeg
     calcurse
