@@ -107,7 +107,4 @@ sudo cp -r "$home_dir/.themes/Gruvbox-Light-hdpi/" /usr/share/themes/
 
 curl -sS https://starship.rs/install.sh | sh
 
-# Instalacion de NVM
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
-
 echo "Script completado con éxito."
