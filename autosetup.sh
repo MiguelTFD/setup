@@ -70,7 +70,6 @@ packages=(
     rofi
     ranger
     neofetch
-    openjdk-17-jdk
     maven
     lightdm
     light-locker
