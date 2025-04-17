@@ -85,6 +85,8 @@ packages=(
     btop
     zatura
     fzf
+    postgresql 
+    postgresql-contrib
 )
 
 echo "Instalando paquetes..."
