@@ -107,7 +107,7 @@ sudo cp -r "$home_dir/.themes/Gruvbox-Light" /usr/share/themes/
 sudo cp -r "$home_dir/.themes/Gruvbox-Light-xhdpi/" /usr/share/themes/
 sudo cp -r "$home_dir/.themes/Gruvbox-Light-hdpi/" /usr/share/themes/
 
-sudo cp -r "$home_dir/.icons/*" /usr/share/icons
+sudo cp -r "$home_dir/.icons/*" /usr/share/icons/
 
 curl -sS https://starship.rs/install.sh | sh
 
