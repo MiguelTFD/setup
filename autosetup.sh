@@ -107,9 +107,4 @@ sudo cp -r "$home_dir/.themes/Gruvbox-Light-hdpi/" /usr/share/themes/
 
 sudo cp -r "$home_dir/.icons/"* /usr/share/icons/
 
-
-curl -sS https://starship.rs/install.sh | sh
-git clone https://github.com/alexanderjeurissen/ranger_devicons "$home_dir/.config/ranger/plugins/ranger_devicons"
-
-
 echo "Script completado con éxito."
