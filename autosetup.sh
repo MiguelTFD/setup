@@ -85,8 +85,6 @@ packages=(
     btop
     zatura
     fzf
-    postgresql 
-    postgresql-contrib
 )
 
 echo "Instalando paquetes..."
@@ -107,7 +105,7 @@ sudo cp -r "$home_dir/.themes/Gruvbox-Light" /usr/share/themes/
 sudo cp -r "$home_dir/.themes/Gruvbox-Light-xhdpi/" /usr/share/themes/
 sudo cp -r "$home_dir/.themes/Gruvbox-Light-hdpi/" /usr/share/themes/
 
-sudo cp -r "$home_dir/.icons/*" /usr/share/icons/
+sudo cp -r "$home_dir/.icons/"* /usr/share/icons/
 
 # Ranger devicons plugin install
 git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
