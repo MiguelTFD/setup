@@ -65,6 +65,7 @@ packages=(
     feh
     psmisc
     firefox-esr
+    chromium
     alacritty
     polybar
     rofi
