@@ -82,9 +82,10 @@ packages=(
     timeshift
     picom
     net-tools
+    network-manager
     ripgrep
     btop
-    zatura
+    zathura
     fzf
 )
 
