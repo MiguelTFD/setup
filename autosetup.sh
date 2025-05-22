@@ -82,7 +82,6 @@ packages=(
     timeshift
     picom
     net-tools
-    network-manager
     ripgrep
     btop
     zathura
