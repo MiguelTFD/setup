@@ -84,6 +84,8 @@ packages=(
     net-tools
     ripgrep
     btop
+    cava
+    cmatrix
     zathura
     fzf
 )
