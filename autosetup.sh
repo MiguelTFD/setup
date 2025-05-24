@@ -90,6 +90,7 @@ packages=(
     zathura
     fzf
 )
+# considera cambiar net-tools a network-manager, cuando uses una laptop
 
 echo "Instalando paquetes..."
 for pkg in "${packages[@]}"; do
