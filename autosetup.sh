@@ -86,6 +86,7 @@ packages=(
     btop
     cava
     cmatrix
+    pipes-sh
     zathura
     fzf
 )
