@@ -69,9 +69,7 @@ packages=(
     alacritty
     polybar
     rofi
-    ranger
-    neofetch
-    maven
+    nnn
     lightdm
     light-locker
     dunst
@@ -83,8 +81,9 @@ packages=(
     picom
     net-tools
     ripgrep
-    btop
+    htop
     cava
+    tty-clock
     cmatrix
     pipes-sh
     zathura
