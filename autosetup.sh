@@ -76,7 +76,6 @@ packages=(
     libnotify-bin
     scrot
     ffmpeg
-    calcurse
     timeshift
     picom
     net-tools
