@@ -43,7 +43,7 @@ remove_default_dotfiles() {
         fi
     done
 }
-remove_default_dotfiles()
+remove_default_dotfiles
 
 move_repo_dotfiles() {
     echo "Moviendo el contenido de dotfiles al directorio home..."
@@ -59,43 +59,62 @@ move_repo_dotfiles() {
 move_repo_dotfiles
 
 package_list=(
-    pulseaudio
-    ntfs-3g
+    # ─── CORE & UTILS ──────────────────────────────────────────────────
+    build-essential
+    timeshift
     curl
     unzip
-    build-essential
-    vim
+    jq
+    bc
+
+    # ─── AUDIO (Modern Stack) ──────────────────────────────────────────
+    pipewire
+    pipewire-pulse
+    wireplumber
+
+    # ─── WINDOW MANAGER & X11 ──────────────────────────────────────────
     xorg
-    xclip
     i3-wm
-    feh
-    psmisc
-    firefox-esr
-    chromium
-    alacritty
-    polybar
+    picom
     rofi
-    nnn
-    lightdm
-    light-locker
     dunst
     libnotify-bin
-    scrot
-    ffmpeg
-    timeshift
-    picom
-    net-tools
+    xclip
+    lightdm
+    light-locker
+    polybar
+
+    # ─── TERMINAL & MODERN UNIX TOOLS ──────────────────────────────────
+    alacritty
+    tmux
     ripgrep
-    htop
+    fzf
+    bat
+    lsd
+    btop
+    psmisc
+    zathura
+    nnn
+
+    # ─── DEVELOPMENT TOOLS ─────────────────────────────────────────────
+    vim
+
+    # ─── BROWSERS ──────────────────────────────────────────────────────
+    firefox-esr
+    chromium
+
+    # ─── MULTIMEDIA & SCREEN ───────────────────────────────────────────
+    ffmpeg
+    maim
+    feh
+
+    # ─── AESTHETICS ────────────────────────────────────────────────────
     cava
     tty-clock
-    zathura
-    fzf
 )
-# TODO: considera cambiar net-tools a network-manager, cuando uses una laptop
 
 echo "Instalando paquetes..."
-for pkg in "${packages[@]}"; do
+for pkg in "${package_list[@]}"; do
     install_package "$pkg"
 done
 echo "Proceso de instalacion de paquetes completado."
