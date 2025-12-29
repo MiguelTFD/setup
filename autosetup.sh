@@ -83,8 +83,6 @@ packages=(
     htop
     cava
     tty-clock
-    cmatrix
-    pipes-sh
     zathura
     fzf
 )
