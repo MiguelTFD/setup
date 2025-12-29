@@ -1,16 +1,16 @@
 #!/bin/bash
 
-# Repositorio de dotfiles
 repo_url="https://github.com/MiguelTFD/dotfiles.git"
 
-# Obtener el directorio home del usuario actual
-if [ -n "$SUDO_USER" ]; then
-    home_dir=$(eval echo ~${SUDO_USER})
-else
-    home_dir="$HOME"
-fi
+get_current_user_home_dir() {
+    if [ -n "$SUDO_USER" ]; then
+        home_dir=$(eval echo ~${SUDO_USER})
+    else
+        home_dir="$HOME"
+    fi
+}
+get_current_user_home_dir
 
-# Función para instalar un paquete
 install_package() {
     package=$1
     if sudo apt-get install -y "$package" > /dev/null 2>&1; then
