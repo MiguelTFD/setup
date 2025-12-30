@@ -80,6 +80,7 @@ package_list=(
     dunst
     libnotify-bin
     xclip
+    slop
     lightdm
     light-locker
     polybar
