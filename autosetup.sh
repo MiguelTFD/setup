@@ -67,6 +67,7 @@ package_list=(
     git
     rtkit
     unzip
+    zip
     jq
     bc
 
