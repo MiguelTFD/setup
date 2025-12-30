@@ -63,15 +63,25 @@ package_list=(
     build-essential
     timeshift
     curl
+    wget
+    git
+    rtkit
     unzip
     jq
     bc
 
+    # ─── NETWORK (TUI First) ───────────────────────────────────────────
+    network-manager
+    
     # ─── AUDIO (Modern Stack) ──────────────────────────────────────────
+    wireplumber
     pipewire
     pipewire-pulse
-    wireplumber
-
+    pipewire-alsa
+    pipewire-jack
+    libspa-0.2-bluetooth
+    pulsemixer
+    
     # ─── WINDOW MANAGER & X11 ──────────────────────────────────────────
     xorg
     i3-wm
@@ -84,6 +94,7 @@ package_list=(
     lightdm
     light-locker
     polybar
+    xdg-desktop-portal-gtk
 
     # ─── TERMINAL & MODERN UNIX TOOLS ──────────────────────────────────
     alacritty
@@ -94,7 +105,6 @@ package_list=(
     lsd
     btop
     psmisc
-    zathura
     nnn
 
     # ─── DEVELOPMENT TOOLS ─────────────────────────────────────────────
@@ -106,7 +116,9 @@ package_list=(
 
     # ─── MULTIMEDIA & SCREEN ───────────────────────────────────────────
     ffmpeg
+    mpv
     maim
+    zathura
     feh
 
     # ─── AESTHETICS ────────────────────────────────────────────────────
