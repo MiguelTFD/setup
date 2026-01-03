@@ -61,6 +61,7 @@ move_repo_dotfiles
 package_list=(
     # ─── CORE & UTILS ──────────────────────────────────────────────────
     build-essential
+    linux-headers-amd64
     timeshift
     curl
     wget
@@ -70,16 +71,17 @@ package_list=(
     zip
     jq
     bc
+    xdg-user-dirs
+    xdg-utils
 
     # ─── NETWORK (TUI First) ───────────────────────────────────────────
     network-manager
     
     # ─── AUDIO (Modern Stack) ──────────────────────────────────────────
-    wireplumber
     pipewire
     pipewire-pulse
     pipewire-alsa
-    pipewire-jack
+    wireplumber
     libspa-0.2-bluetooth
     pulsemixer
     
@@ -95,6 +97,8 @@ package_list=(
     lightdm
     light-locker
     polybar
+    xdg-desktop-portal
+    xdg-desktop-portal-gtk
 
     # ─── TERMINAL & MODERN UNIX TOOLS ──────────────────────────────────
     alacritty
@@ -144,5 +148,10 @@ sudo cp -r "$home_dir/.themes/Gruvbox-Light-xhdpi/" /usr/share/themes/
 sudo cp -r "$home_dir/.themes/Gruvbox-Light-hdpi/" /usr/share/themes/
 
 sudo cp -r "$home_dir/.icons/"* /usr/share/icons/
+
+# Daemons Conf
+systemctl --user daemon-reload
+systemctl --user --now enable pipewire pipewire-pulse wireplumber
+
 
 echo "Script completado con éxito."
