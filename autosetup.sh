@@ -77,12 +77,8 @@ package_list=(
     # ─── NETWORK (TUI First) ───────────────────────────────────────────
     network-manager
     
-    # ─── AUDIO (Modern Stack) ──────────────────────────────────────────
-    pipewire
-    pipewire-pulse
-    pipewire-alsa
-    wireplumber
-    libspa-0.2-bluetooth
+    # ─── AUDIO ─────────────────────────────────────────────────────────
+    pulseaudio
     pulsemixer
     
     # ─── WINDOW MANAGER & X11 ──────────────────────────────────────────
@@ -148,10 +144,5 @@ sudo cp -r "$home_dir/.themes/Gruvbox-Light-xhdpi/" /usr/share/themes/
 sudo cp -r "$home_dir/.themes/Gruvbox-Light-hdpi/" /usr/share/themes/
 
 sudo cp -r "$home_dir/.icons/"* /usr/share/icons/
-
-# Daemons Conf
-systemctl --user daemon-reload
-systemctl --user --now enable pipewire pipewire-pulse wireplumber
-
 
 echo "Script completado con éxito."
