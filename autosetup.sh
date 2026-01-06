@@ -93,8 +93,6 @@ package_list=(
     lightdm
     light-locker
     polybar
-    xdg-desktop-portal
-    xdg-desktop-portal-gtk
 
     # ─── TERMINAL & MODERN UNIX TOOLS ──────────────────────────────────
     alacritty
