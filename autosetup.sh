@@ -14,39 +14,39 @@ get_current_user_home_dir
 install_package() {
     package=$1
     if sudo apt-get install -y "$package" > /dev/null 2>&1; then
-        echo "$package instalado con éxito."
+        echo "pakage $package has been installed."
     else
-        echo "No se pudo instalar $package."
+        echo "cannot install $package pakage."
     fi
 }
 install_package git
 
 clone_repo() {
-    echo "Clonando repositorio de dotfiles..."
+    echo "Cloning dotfiles repo..."
     if git clone "$repo_url" "$home_dir/dotfiles" > /dev/null 2>&1; then
-        echo "Repositorio clonado con éxito en $home_dir/dotfiles."
+        echo "dotfiles repo has been cloned on $home_dir/dotfiles."
     else
-        echo "No se pudo clonar el repositorio."
+        echo "Fail to cloning the repository."
         exit 1
     fi
 }
 clone_repo
 
 remove_default_dotfiles() {
-    echo "Eliminando archivos y directorios en $home_dir que coinciden con los de dotfiles..."
+    echo "Removing default files on $home_dir ..."
     
     cd "$home_dir/dotfiles"
     for item in .* *; do
         if [ -e "$home_dir/$item" ]; then
             rm -rf "$home_dir/$item"
-            echo "Eliminado $home_dir/$item"
+            echo "Removed $home_dir/$item"
         fi
     done
 }
 remove_default_dotfiles
 
 move_repo_dotfiles() {
-    echo "Moviendo el contenido de dotfiles al directorio home..."
+    echo "Moving dotfiles to home directory..."
     
     shopt -s dotglob
     mv "$home_dir/dotfiles/"* "$home_dir/"
@@ -54,7 +54,7 @@ move_repo_dotfiles() {
     shopt -u dotglob
     rm -rf "$home_dir/dotfiles"
     
-    echo "Contenido movido y carpeta dotfiles eliminada."
+    echo "Files moved succesfully."
 }
 move_repo_dotfiles
 
@@ -74,7 +74,7 @@ package_list=(
     xdg-user-dirs
     xdg-utils
 
-    # ─── NETWORK (TUI First) ───────────────────────────────────────────
+    # ─── NETWORK ───────────────────────────────────────────────────────
     network-manager
     
     # ─── AUDIO ─────────────────────────────────────────────────────────
@@ -124,11 +124,11 @@ package_list=(
     tty-clock
 )
 
-echo "Instalando paquetes..."
+echo "Install Pakages..."
 for pkg in "${package_list[@]}"; do
     install_package "$pkg"
 done
-echo "Proceso de instalacion de paquetes completado."
+echo "Done ."
 
 sudo cp -r "$home_dir/.themes/Gruvbox-Dark-Medium" /usr/share/themes/
 sudo cp -r "$home_dir/.themes/Gruvbox-Dark-Medium-xhdpi/" /usr/share/themes/
@@ -143,4 +143,4 @@ sudo cp -r "$home_dir/.themes/Gruvbox-Light-hdpi/" /usr/share/themes/
 
 sudo cp -r "$home_dir/.icons/"* /usr/share/icons/
 
-echo "Script completado con éxito."
+echo "Final setup script, have a good day."
