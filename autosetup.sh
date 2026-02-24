@@ -60,8 +60,6 @@ move_repo_dotfiles
 
 package_list=(
     # ─── CORE & UTILS ──────────────────────────────────────────────────
-    build-essential
-    linux-headers-amd64
     timeshift
     curl
     wget
@@ -87,7 +85,6 @@ package_list=(
     picom
     rofi
     dunst
-    libnotify-bin
     xclip
     slop
     lightdm
@@ -101,7 +98,7 @@ package_list=(
     fzf
     bat
     lsd
-    btop
+    htop
     psmisc
     nnn
 
@@ -110,17 +107,14 @@ package_list=(
 
     # ─── BROWSERS ──────────────────────────────────────────────────────
     firefox-esr
-    chromium
 
     # ─── MULTIMEDIA & SCREEN ───────────────────────────────────────────
     ffmpeg
-    mpv
     maim
     zathura
     feh
 
     # ─── AESTHETICS ────────────────────────────────────────────────────
-    cava
     tty-clock
 )
 
