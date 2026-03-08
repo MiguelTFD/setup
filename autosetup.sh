@@ -124,17 +124,8 @@ for pkg in "${package_list[@]}"; do
 done
 echo "Done ."
 
-sudo cp -r "$home_dir/.themes/Gruvbox-Dark-Medium" /usr/share/themes/
-sudo cp -r "$home_dir/.themes/Gruvbox-Dark-Medium-xhdpi/" /usr/share/themes/
-sudo cp -r "$home_dir/.themes/Gruvbox-Dark-Medium-hdpi/" /usr/share/themes/
-
-sudo cp -r "$home_dir/.local/share/wallpapers/Gruvbox" /usr/share/wallpapers/
-sudo cp -f "$home_dir/.config/miscellaneous/lightdm/lightdm.conf" /etc/lightdm/
-
-sudo cp -r "$home_dir/.themes/Gruvbox-Light" /usr/share/themes/
-sudo cp -r "$home_dir/.themes/Gruvbox-Light-xhdpi/" /usr/share/themes/
-sudo cp -r "$home_dir/.themes/Gruvbox-Light-hdpi/" /usr/share/themes/
-
 sudo cp -r "$home_dir/.icons/"* /usr/share/icons/
+sudo cp -r "$home_dir/.themes/"* /usr/share/themes/
+sudo cp -r "$home_dir/.local/share/wallpapers/Gruvbox" /usr/share/wallpapers/
 
-echo "Final setup script, have a good day."
+echo "Finish ¯\_(ツ)_/¯"
