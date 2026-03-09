@@ -19,7 +19,6 @@ install_package() {
         echo "cannot install $package pakage."
     fi
 }
-install_package git
 
 clone_repo() {
     echo "Cloning dotfiles repo..."
