@@ -92,7 +92,6 @@ package_list=(
 
     # ─── TERMINAL & MODERN UNIX TOOLS ──────────────────────────────────
     alacritty
-    tmux
     ripgrep
     fzf
     bat
@@ -106,6 +105,7 @@ package_list=(
 
     # ─── BROWSERS ──────────────────────────────────────────────────────
     firefox-esr
+    chromium
 
     # ─── MULTIMEDIA & SCREEN ───────────────────────────────────────────
     ffmpeg
@@ -114,7 +114,7 @@ package_list=(
     feh
 
     # ─── AESTHETICS ────────────────────────────────────────────────────
-    tty-clock
+    neofetch
 )
 
 echo "Install Pakages..."
