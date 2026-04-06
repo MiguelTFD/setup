@@ -114,7 +114,7 @@ package_list=(
     feh
 
     # ─── AESTHETICS ────────────────────────────────────────────────────
-    fastfetch
+    neofetch
 )
 
 echo "Install Pakages..."
