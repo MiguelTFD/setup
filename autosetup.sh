@@ -96,9 +96,9 @@ package_list=(
     fzf
     bat
     lsd
-    htop
+    btop
     psmisc
-    nnn
+    lf
 
     # ─── DEVELOPMENT TOOLS ─────────────────────────────────────────────
     vim
