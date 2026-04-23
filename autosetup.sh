@@ -33,7 +33,6 @@ clone_repo
 
 remove_default_dotfiles() {
     echo "Removing default files on $home_dir ..."
-    
     cd "$home_dir/dotfiles"
     for item in .* *; do
         if [ -e "$home_dir/$item" ]; then
